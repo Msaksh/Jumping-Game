@@ -1,0 +1,34 @@
+.clouds{
+    width: 25vw;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: honeydew;
+}
+.cloud1{
+    position: absolute;
+    right: 0;
+    animation: cloud1 6s linear infinite;
+}
+.cloud2{
+    position: absolute;
+    background-color: hotpink;
+    right: -25vw;
+    top: 15%;
+    animation: cloud2 8s linear infinite;
+}
+@keyframes cloud1{
+    0%{
+        transform: translate(25vw);
+    }
+    100%{
+        transform: translate(-110vw);
+        }
+}
+@keyframes cloud2{
+    0%{
+        transform: translate(45vw);
+    }
+    100%{
+        transform: translate(-125vw);
+    }
+}
